@@ -12,7 +12,13 @@ int main() {
         }
         // print stars
         for (int star = 1; star <= 2 * row - 1; star++) {
-            cout << "* ";
+            if(row==1 || row==n || star==1 || star==2*row-1){
+                cout << "* ";
+            }
+            else{
+                cout << "  ";
+            }
+            
         }
         cout << endl;
     }
