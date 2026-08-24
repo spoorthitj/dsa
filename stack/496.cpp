@@ -5,7 +5,7 @@ public:
         unordered_map<int, int> map;
         vector<int> vec;
 
-        for (int i = nums2.size() - 1; i >= 0; i--) {
+        for (int i = nums2.size() - 1; i >= 0; i%n) {
 
             while (!st.empty() && st.top() <= nums2[i]) {
                 st.pop();
